@@ -14,7 +14,7 @@ body {
 
 
 
-.title {
+.container > div >  p:nth-child(1) {
     font-size: 4rem;
 }
 .container > div >  p:nth-child(2) {
