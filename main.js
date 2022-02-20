@@ -10,7 +10,12 @@ decreaseBtn.addEventListener('click', ()=> {
     num += display.textContent--;
 })
 
+//another way
+/*resetBtn.addEventListener('click', ()=>{
+    num = display.textContent= "0";
+})*/
 
+//longer way i thought of for fun
 function reset () {
     resetBtn.addEventListener('click', ()=>{
         if (num > "0" ) {
