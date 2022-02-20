@@ -11,11 +11,19 @@ decreaseBtn.addEventListener('click', ()=> {
 })
 
 
-resetBtn.addEventListener('click', ()=>{
-    num = display.textContent= "0";
-})
+function reset () {
+    resetBtn.addEventListener('click', ()=>{
+        if (num > "0" ) {
+            num = display.textContent = "0";
+        }
+        else if (num < "0" ) {
+           num += display.textContent = "0";
+        }
+      
+    })
 
-
+}
+reset();
 
 
 increaseBtn.addEventListener('click', ()=>{
