@@ -6,9 +6,17 @@ const display = document.querySelector('.screen');
 
 let num = display.textContent;
 
+
+
+
+
+
 decreaseBtn.addEventListener('click', ()=> {
-    num += display.textContent--;
+    num = display.textContent--;
+    console.log(num);
 })
+
+
 
 //another way
 /*resetBtn.addEventListener('click', ()=>{
@@ -22,18 +30,16 @@ function reset () {
             num = display.textContent = "0";
         }
         else if (num < "0" ) {
-           num += display.textContent = "0";
+           num = display.textContent = "0";
         }
       
     })
-
 }
 reset();
 
 
 increaseBtn.addEventListener('click', ()=>{
-    num += display.textContent++;
+    num = display.textContent++;
+    console.log(num)
 })
 
-
-console.log(num);
